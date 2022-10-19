@@ -1,38 +1,98 @@
 ﻿#include <iostream>
 #include <cstring>
+#include <stdio.h>
 using namespace std;
 
-void task1()
+
+int isupper(char letter)
+{
+    int res = 0;
+    if (letter >= 'A' && letter <= 'Z')
+        res = 1;
+
+    return res;
+}
+
+int islower(char letter)
+{
+    int res = 0;
+    if (letter >= 'a' && letter <= 'z')
+        res = 1;
+
+    return res;
+ 
+}
+
+char shifrovka(char letter, int key)
+{
+    if (isupper(letter))
+    {
+        letter += key;
+        if ((int)letter > 90)
+        {
+            key = letter - 90;
+            letter = 65 + key - 1;
+        }
+    }
+    if (islower(letter))
+    {
+        letter += key;
+        if ((int)letter > 122)
+        {
+            key = letter - 122;
+            letter = 97 + key - 1;
+        }
+    }
+    cout << letter;
+    return letter;
+
+}
+
+
+
+
+
+
+
+
+int task1()
 {
 
 }
 
 void task2()
 {
-    int len_substr;
-    char stroka;
-    char podstroka;
-    cout << "Enter lenght of your substring";
-    cin >> len_substr;
 
-    cout << "Enter your string";
-    cin >> stroka;
-
-    cout << "Enter your substring";
-    cin >> podstroka;
-
-    for (int i = 0; i < strlen(stroka); i++)
-    {
-
-    }
-
-    
 
 }
 
 void task3()
 {
+    char ctroka[100];
+    int key;
+    int i;
 
+    cout << "Enter your string\n";
+    scanf_s("%s", ctroka);
+    cout << "Enter your key\n";
+    cin >> key;
+    cout << "Coding string\n ";
+
+    for (i = 0; i < 100; i++)
+    {
+       shifrovka(ctroka[i], key);
+    }
+    
+}
+
+void task4()
+{/*
+    const char* ctroka[100];
+    scanf_s("%s", ctroka);
+    strchr(ctroka);
+    strrchr(ctroka);
+    printf(ctroka);
+    */
 }
 
 
@@ -43,7 +103,7 @@ int main()
     short choice = 0;
     while (true)
     {
-        cout << "Choose number:\n1.Pallindom\n2.Find substring in string \n3.Сaesar cipher \n4.Exit\n4.Exiыt";
+        cout << "Choose number:\n1.Pallindom\n2.Find substring in string \n3.Caesar cipher \n4.Output word in "" \n5.Exit\n";
         cin >> choice;
         switch (choice)
         {
@@ -60,6 +120,11 @@ int main()
         case 3:
         {
             task3();
+            break;
+        }
+        case 4:
+        {
+            task4();
             break;
         }
         default:
