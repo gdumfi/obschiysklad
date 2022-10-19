@@ -32,7 +32,7 @@ void task2()
     cout << "enter n:";
     cin >> n;
 
-    unsigned long long cnk = 1;
+    bool cnk = 1;
     for (int k = 1; k <= n; k++)
     {
         cout << cnk << " ";
