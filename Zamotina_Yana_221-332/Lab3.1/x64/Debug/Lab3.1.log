@@ -1,0 +1,4 @@
+﻿  Lab3.1.cpp
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\Lab3.1\Lab3.1.cpp(79,17): warning C4154: удаление массива; выполнено преобразование к указателю
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\Lab3.1\Lab3.1.cpp(97,17): warning C4154: удаление массива; выполнено преобразование к указателю
+  Lab3.1.vcxproj -> C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\x64\Debug\Lab3.1.exe

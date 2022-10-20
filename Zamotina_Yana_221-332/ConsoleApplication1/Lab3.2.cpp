@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -98,7 +98,7 @@ int main()
         {
         case 1:
         {
-            if (mass0 != nullptr) 
+            if (mass0 != nullptr)
             {
                 delete[] mass0;
                 task1(mass0, mass_size);
@@ -113,7 +113,7 @@ int main()
         }
         case 2:
         {
-            task2(mass0,mass_size);
+            task2(mass0, mass_size);
             break;
         }
         case 3:
@@ -123,9 +123,9 @@ int main()
         }
         case 4:
         {
-            task4(mass0,mass_size);
+            task4(mass0, mass_size);
             break;
-        
+
         }
         default:
         {

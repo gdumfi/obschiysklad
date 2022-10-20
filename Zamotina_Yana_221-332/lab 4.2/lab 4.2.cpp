@@ -1,12 +1,8 @@
 ﻿#include <iostream>
+#include <cstring>
 #include <string>
 #include <stdio.h>
-#include <fstream>
 using namespace std;
-
-string file_format(const string file_path_full)
-{
-}
 
 string file_name(const string file_path_full)
 {
@@ -34,8 +30,10 @@ bool file_copy(const string file_path_full)
 
 void task1()
 {
-    char str[256];
-    cin.getline(str, 256, ';');
+    char strpath[256];
+    int res;
+    cin.getline(strpath, 256, ';');
+
 
 }
 
@@ -67,6 +65,7 @@ void task6()
 
 int main()
 {
+    string path = nullptr;
     short choice = 0;
     while (true)
     {
