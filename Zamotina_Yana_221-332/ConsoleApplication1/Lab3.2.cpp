@@ -49,6 +49,8 @@ void task2(int *mass,int size)
     for (int i = 0; i < size; i++)
         cout << mass[i] << " ";
     cout << endl;
+
+    delete[] mass;
     
 }
 
@@ -85,10 +87,6 @@ int main()
 {
     int* mass0 = nullptr;
     int mass_size = 0;
-
-
-
-
 
 
     short choice = 0;
