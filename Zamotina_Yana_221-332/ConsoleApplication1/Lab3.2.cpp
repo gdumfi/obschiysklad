@@ -87,10 +87,6 @@ int main()
     int mass_size = 0;
 
 
-
-
-
-
     short choice = 0;
     while (true)
     {

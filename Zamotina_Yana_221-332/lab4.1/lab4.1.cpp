@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <cstring>
+#include <string>
 #include <stdio.h>
 using namespace std;
 
@@ -55,7 +56,7 @@ char shifrovka(char letter, int key)
 
 
 
-int task1()
+void task1()
 {
 
 }
@@ -68,31 +69,36 @@ void task2()
 
 void task3()
 {
-    char ctroka[100];
+    char ctroka[256];
     int key;
     int i;
 
     cout << "Enter your string\n";
-    scanf_s("%s", ctroka);
+    cin >> ctroka;
     cout << "Enter your key\n";
     cin >> key;
     cout << "Coding string\n ";
 
-    for (i = 0; i < 100; i++)
+    for (i = 0; i < strlen(ctroka); i++)
     {
        shifrovka(ctroka[i], key);
     }
-    
+    cout << endl;
 }
 
 void task4()
-{/*
-    const char* ctroka[100];
-    scanf_s("%s", ctroka);
-    strchr(ctroka);
-    strrchr(ctroka);
-    printf(ctroka);
-    */
+{
+    char ctroka[100];
+    cin.getline(ctroka, strlen(ctroka));
+    char *ctroka_new = strchr(ctroka,"\"");
+    char* result = strrchr(ctroka_new, "\"");
+
+        for (int i = 0; i < strlen(result); i++)
+        {
+            cout << result[i];
+        }
+        cout << endl;
+    }
 }
 
 
