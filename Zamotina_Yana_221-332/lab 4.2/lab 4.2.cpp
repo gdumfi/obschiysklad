@@ -34,6 +34,8 @@ bool file_copy(const string file_path_full)
 
 void task1()
 {
+    char str[256];
+    cin.getline(str, 256, ';');
 
 }
 

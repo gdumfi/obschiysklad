@@ -41,6 +41,7 @@ void task1(int *&mass,int &size)
             cin >> mass[i];
 
         }
+
         
 }
 
@@ -49,6 +50,7 @@ void task2(int *mass,int size)
     for (int i = 0; i < size; i++)
         cout << mass[i] << " ";
     cout << endl;
+
     
 }
 
@@ -96,7 +98,17 @@ int main()
         {
         case 1:
         {
-            task1(mass0, mass_size);
+            if (mass0 != nullptr) 
+            {
+                delete[] mass0;
+                task1(mass0, mass_size);
+                continue;
+            }
+            else
+            {
+                task1(mass0, mass_size);
+                continue;
+            }
             break;
         }
         case 2:
