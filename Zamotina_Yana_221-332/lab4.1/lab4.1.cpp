@@ -90,15 +90,9 @@ void task4()
 {
     char ctroka[100];
     cin.getline(ctroka, strlen(ctroka));
-    char *ctroka_new = strchr(ctroka,"\"");
-    char* result = strrchr(ctroka_new, "\"");
-
-        for (int i = 0; i < strlen(result); i++)
-        {
-            cout << result[i];
-        }
-        cout << endl;
-    }
+    const char* result = strchr(ctroka, '\"');
+    const char* result_new = strrchr(result, '\"');
+    cout << result_new;
 }
 
 

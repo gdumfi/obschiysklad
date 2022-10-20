@@ -4,14 +4,30 @@
 #include <fstream>
 using namespace std;
 
-void string_file_format(const string file_path_full)
+string file_format(const string file_path_full)
 {
 }
 
+string file_name(const string file_path_full)
+{
+}
 
+string file_path(const string file_path_full)
+{
+}
 
+char file_disk(const string file_path_full)
+{
+}
 
+bool file_rename(string* file_path_full)
+{
+}
 
+bool file_copy(const string file_path_full)
+{
+
+}
 
 
 
@@ -36,6 +52,14 @@ void task4()
 {
 }
 
+void task5()
+{
+}
+
+void task6()
+{
+}
+
 
 
 
@@ -44,7 +68,7 @@ int main()
     short choice = 0;
     while (true)
     {
-        cout << "Choose number:\n1.Pallindom\n2.Find substring in string \n3.Caesar cipher \n4.Output word in "" \n5.Exit\n";
+        cout << "Choose number:\n1.Output filename extension\n2.Output filename\n3.Output path\n4.Output name of disk\n5.Rename\n6.Copy file\n";
         cin >> choice;
         switch (choice)
         {
@@ -66,6 +90,16 @@ int main()
         case 4:
         {
             task4();
+            break;
+        }
+        case 5:
+        {
+            task5();
+            break;
+        }
+        case 6:
+        {
+            task6();
             break;
         }
         default:
