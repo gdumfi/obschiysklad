@@ -1,0 +1,3 @@
+﻿  Удалить.cpp
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\Удалить\Удалить.cpp(30,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Удалить.vcxproj -> C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\x64\Debug\Удалить.exe

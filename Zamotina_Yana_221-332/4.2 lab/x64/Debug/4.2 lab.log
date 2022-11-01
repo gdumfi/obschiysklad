@@ -1,0 +1,6 @@
+﻿  4.2 lab.cpp
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\4.2 lab\4.2 lab.cpp(9,27): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\4.2 lab\4.2 lab.cpp(18,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\4.2 lab\4.2 lab.cpp(26,28): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\4.2 lab\4.2 lab.cpp(32,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  4.2 lab.vcxproj -> C:\Users\Яна\Desktop\labs\labs-gdumfi\Zamotina_Yana_221-332\x64\Debug\4.2 lab.exe
